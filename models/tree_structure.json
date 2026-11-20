@@ -1,0 +1,245 @@
+{
+  "node_id": 0,
+  "depth": 0,
+  "is_leaf": false,
+  "n_samples": 576,
+  "impurity": 0.5,
+  "value": [
+    0,
+    0
+  ],
+  "prob_diabetic": 0.5,
+  "predicted_class": 1,
+  "predicted_label": "Alerta: Alto Riesgo",
+  "feature": "Glucose",
+  "feature_label": "Glucosa plasmática",
+  "threshold": 132.5,
+  "unit": "mg/dL",
+  "condition_text": "Glucosa plasmática <= 132.5 mg/dL",
+  "left_child": {
+    "node_id": 1,
+    "depth": 1,
+    "is_leaf": false,
+    "n_samples": 397,
+    "impurity": 0.4377,
+    "value": [
+      0,
+      0
+    ],
+    "prob_diabetic": 0.3235,
+    "predicted_class": 0,
+    "predicted_label": "Riesgo Bajo / Estable",
+    "feature": "Age",
+    "feature_label": "Edad del paciente",
+    "threshold": 30.5,
+    "unit": "años",
+    "condition_text": "Edad del paciente <= 30.5 años",
+    "left_child": {
+      "node_id": 2,
+      "depth": 2,
+      "is_leaf": false,
+      "n_samples": 241,
+      "impurity": 0.3004,
+      "value": [
+        0,
+        0
+      ],
+      "prob_diabetic": 0.1841,
+      "predicted_class": 0,
+      "predicted_label": "Riesgo Bajo / Estable",
+      "feature": "BMI",
+      "feature_label": "Índice de masa corporal (IMC)",
+      "threshold": 45.4,
+      "unit": "kg/m²",
+      "condition_text": "Índice de masa corporal (IMC) <= 45.4 kg/m²",
+      "left_child": {
+        "node_id": 3,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 235,
+        "impurity": 0.2616,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.1547,
+        "predicted_class": 0,
+        "predicted_label": "Riesgo Bajo / Estable"
+      },
+      "right_child": {
+        "node_id": 4,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 6,
+        "impurity": 0.1749,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.9032,
+        "predicted_class": 1,
+        "predicted_label": "Alerta: Alto Riesgo"
+      }
+    },
+    "right_child": {
+      "node_id": 5,
+      "depth": 2,
+      "is_leaf": false,
+      "n_samples": 156,
+      "impurity": 0.5,
+      "value": [
+        0,
+        0
+      ],
+      "prob_diabetic": 0.504,
+      "predicted_class": 1,
+      "predicted_label": "Alerta: Alto Riesgo",
+      "feature": "BMI",
+      "feature_label": "Índice de masa corporal (IMC)",
+      "threshold": 26.9,
+      "unit": "kg/m²",
+      "condition_text": "Índice de masa corporal (IMC) <= 26.9 kg/m²",
+      "left_child": {
+        "node_id": 6,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 29,
+        "impurity": 0.0,
+        "value": [
+          1,
+          0
+        ],
+        "prob_diabetic": 0.0,
+        "predicted_class": 0,
+        "predicted_label": "Riesgo Bajo / Estable"
+      },
+      "right_child": {
+        "node_id": 7,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 127,
+        "impurity": 0.4846,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.5877,
+        "predicted_class": 1,
+        "predicted_label": "Alerta: Alto Riesgo"
+      }
+    }
+  },
+  "right_child": {
+    "node_id": 8,
+    "depth": 1,
+    "is_leaf": false,
+    "n_samples": 179,
+    "impurity": 0.3301,
+    "value": [
+      0,
+      0
+    ],
+    "prob_diabetic": 0.7914,
+    "predicted_class": 1,
+    "predicted_label": "Alerta: Alto Riesgo",
+    "feature": "Glucose",
+    "feature_label": "Glucosa plasmática",
+    "threshold": 154.5,
+    "unit": "mg/dL",
+    "condition_text": "Glucosa plasmática <= 154.5 mg/dL",
+    "left_child": {
+      "node_id": 9,
+      "depth": 2,
+      "is_leaf": false,
+      "n_samples": 86,
+      "impurity": 0.4606,
+      "value": [
+        0,
+        0
+      ],
+      "prob_diabetic": 0.6404,
+      "predicted_class": 1,
+      "predicted_label": "Alerta: Alto Riesgo",
+      "feature": "BMI",
+      "feature_label": "Índice de masa corporal (IMC)",
+      "threshold": 29.95,
+      "unit": "kg/m²",
+      "condition_text": "Índice de masa corporal (IMC) <= 29.95 kg/m²",
+      "left_child": {
+        "node_id": 10,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 28,
+        "impurity": 0.4728,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.3834,
+        "predicted_class": 0,
+        "predicted_label": "Riesgo Bajo / Estable"
+      },
+      "right_child": {
+        "node_id": 11,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 58,
+        "impurity": 0.3853,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.7395,
+        "predicted_class": 1,
+        "predicted_label": "Alerta: Alto Riesgo"
+      }
+    },
+    "right_child": {
+      "node_id": 12,
+      "depth": 2,
+      "is_leaf": false,
+      "n_samples": 93,
+      "impurity": 0.1694,
+      "value": [
+        0,
+        0
+      ],
+      "prob_diabetic": 0.9066,
+      "predicted_class": 1,
+      "predicted_label": "Alerta: Alto Riesgo",
+      "feature": "Insulin",
+      "feature_label": "Insulina sérica",
+      "threshold": 80.0,
+      "unit": "µU/mL",
+      "condition_text": "Insulina sérica <= 80.0 µU/mL",
+      "left_child": {
+        "node_id": 13,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 2,
+        "impurity": 0.0,
+        "value": [
+          1,
+          0
+        ],
+        "prob_diabetic": 0.0,
+        "predicted_class": 0,
+        "predicted_label": "Riesgo Bajo / Estable"
+      },
+      "right_child": {
+        "node_id": 14,
+        "depth": 3,
+        "is_leaf": true,
+        "n_samples": 91,
+        "impurity": 0.1506,
+        "value": [
+          0,
+          0
+        ],
+        "prob_diabetic": 0.918,
+        "predicted_class": 1,
+        "predicted_label": "Alerta: Alto Riesgo"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Dependencias Node.js
+node_modules/
+
+# Capturas de pantalla locales del manual (no subir al repositorio)
+docs/screenshots/
+
+# Python: caché, bytecode y entornos virtuales
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Base de datos SQLite generada en ejecución (se crea y siembra automáticamente al iniciar)
+data/clinical_records.db
+data/clinical_records.db-wal
+data/clinical_records.db-shm
+*.db-journal
+
+# Variables de entorno y archivos temporales del sistema operativo / IDE
+.env
+.env.*
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

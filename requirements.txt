@@ -1,0 +1,9 @@
+# Dependencias principales para ejecutar el Sistema de Alerta Temprana de Diabetes Mellitus (INF-3731A)
+# Backend HTTP/REST, preprocesamiento, entrenamiento e inferencia CART y pruebas unitarias.
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Dependencia opcional: descomentar o instalar aparte solo si se utilizara streamlit_app.py
+# streamlit>=1.30.0

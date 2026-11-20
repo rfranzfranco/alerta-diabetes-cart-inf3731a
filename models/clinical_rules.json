@@ -1,0 +1,306 @@
+[
+  {
+    "rule_id": 1,
+    "rule_code": "R1",
+    "leaf_node_id": 3,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática <= 132.5 mg/dL"
+      },
+      {
+        "feature": "Age",
+        "operator": "<=",
+        "threshold": 30.5,
+        "condition_str": "Edad del paciente <= 30.5 años"
+      },
+      {
+        "feature": "BMI",
+        "operator": "<=",
+        "threshold": 45.4,
+        "condition_str": "Índice de masa corporal (IMC) <= 45.4 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática <= 132.5 mg/dL Y Edad del paciente <= 30.5 años Y Índice de masa corporal (IMC) <= 45.4 kg/m² -> ENTONCES RIESGO BAJO / ESTABLE",
+    "predicted_class": 0,
+    "predicted_label": "RIESGO BAJO / ESTABLE",
+    "prob_diabetic": 0.1547,
+    "samples_in_leaf": 235,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 214,
+    "train_pos": 21,
+    "test_neg": 71,
+    "test_pos": 14
+  },
+  {
+    "rule_id": 2,
+    "rule_code": "R2",
+    "leaf_node_id": 4,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática <= 132.5 mg/dL"
+      },
+      {
+        "feature": "Age",
+        "operator": "<=",
+        "threshold": 30.5,
+        "condition_str": "Edad del paciente <= 30.5 años"
+      },
+      {
+        "feature": "BMI",
+        "operator": ">",
+        "threshold": 45.4,
+        "condition_str": "Índice de masa corporal (IMC) > 45.4 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática <= 132.5 mg/dL Y Edad del paciente <= 30.5 años Y Índice de masa corporal (IMC) > 45.4 kg/m² -> ENTONCES ALERTA: ALTO RIESGO",
+    "predicted_class": 1,
+    "predicted_label": "ALERTA: ALTO RIESGO",
+    "prob_diabetic": 0.9032,
+    "samples_in_leaf": 6,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 1,
+    "train_pos": 5,
+    "test_neg": 0,
+    "test_pos": 0
+  },
+  {
+    "rule_id": 3,
+    "rule_code": "R3",
+    "leaf_node_id": 6,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática <= 132.5 mg/dL"
+      },
+      {
+        "feature": "Age",
+        "operator": ">",
+        "threshold": 30.5,
+        "condition_str": "Edad del paciente > 30.5 años"
+      },
+      {
+        "feature": "BMI",
+        "operator": "<=",
+        "threshold": 26.9,
+        "condition_str": "Índice de masa corporal (IMC) <= 26.9 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática <= 132.5 mg/dL Y Edad del paciente > 30.5 años Y Índice de masa corporal (IMC) <= 26.9 kg/m² -> ENTONCES RIESGO BAJO / ESTABLE",
+    "predicted_class": 0,
+    "predicted_label": "RIESGO BAJO / ESTABLE",
+    "prob_diabetic": 0.0,
+    "samples_in_leaf": 29,
+    "class_distribution": [
+      1,
+      0
+    ],
+    "train_neg": 29,
+    "train_pos": 0,
+    "test_neg": 10,
+    "test_pos": 0
+  },
+  {
+    "rule_id": 4,
+    "rule_code": "R4",
+    "leaf_node_id": 7,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática <= 132.5 mg/dL"
+      },
+      {
+        "feature": "Age",
+        "operator": ">",
+        "threshold": 30.5,
+        "condition_str": "Edad del paciente > 30.5 años"
+      },
+      {
+        "feature": "BMI",
+        "operator": ">",
+        "threshold": 26.9,
+        "condition_str": "Índice de masa corporal (IMC) > 26.9 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática <= 132.5 mg/dL Y Edad del paciente > 30.5 años Y Índice de masa corporal (IMC) > 26.9 kg/m² -> ENTONCES ALERTA: ALTO RIESGO",
+    "predicted_class": 1,
+    "predicted_label": "ALERTA: ALTO RIESGO",
+    "prob_diabetic": 0.5877,
+    "samples_in_leaf": 127,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 72,
+    "train_pos": 55,
+    "test_neg": 16,
+    "test_pos": 19
+  },
+  {
+    "rule_id": 5,
+    "rule_code": "R5",
+    "leaf_node_id": 10,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática > 132.5 mg/dL"
+      },
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 154.5,
+        "condition_str": "Glucosa plasmática <= 154.5 mg/dL"
+      },
+      {
+        "feature": "BMI",
+        "operator": "<=",
+        "threshold": 29.95,
+        "condition_str": "Índice de masa corporal (IMC) <= 29.95 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática > 132.5 mg/dL Y Glucosa plasmática <= 154.5 mg/dL Y Índice de masa corporal (IMC) <= 29.95 kg/m² -> ENTONCES RIESGO BAJO / ESTABLE",
+    "predicted_class": 0,
+    "predicted_label": "RIESGO BAJO / ESTABLE",
+    "prob_diabetic": 0.3834,
+    "samples_in_leaf": 28,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 21,
+    "train_pos": 7,
+    "test_neg": 8,
+    "test_pos": 2
+  },
+  {
+    "rule_id": 6,
+    "rule_code": "R6",
+    "leaf_node_id": 11,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática > 132.5 mg/dL"
+      },
+      {
+        "feature": "Glucose",
+        "operator": "<=",
+        "threshold": 154.5,
+        "condition_str": "Glucosa plasmática <= 154.5 mg/dL"
+      },
+      {
+        "feature": "BMI",
+        "operator": ">",
+        "threshold": 29.95,
+        "condition_str": "Índice de masa corporal (IMC) > 29.95 kg/m²"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática > 132.5 mg/dL Y Glucosa plasmática <= 154.5 mg/dL Y Índice de masa corporal (IMC) > 29.95 kg/m² -> ENTONCES ALERTA: ALTO RIESGO",
+    "predicted_class": 1,
+    "predicted_label": "ALERTA: ALTO RIESGO",
+    "prob_diabetic": 0.7395,
+    "samples_in_leaf": 58,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 23,
+    "train_pos": 35,
+    "test_neg": 11,
+    "test_pos": 12
+  },
+  {
+    "rule_id": 7,
+    "rule_code": "R7",
+    "leaf_node_id": 13,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática > 132.5 mg/dL"
+      },
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 154.5,
+        "condition_str": "Glucosa plasmática > 154.5 mg/dL"
+      },
+      {
+        "feature": "Insulin",
+        "operator": "<=",
+        "threshold": 80.0,
+        "condition_str": "Insulina sérica <= 80.0 µU/mL"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática > 132.5 mg/dL Y Glucosa plasmática > 154.5 mg/dL Y Insulina sérica <= 80.0 µU/mL -> ENTONCES RIESGO BAJO / ESTABLE",
+    "predicted_class": 0,
+    "predicted_label": "RIESGO BAJO / ESTABLE",
+    "prob_diabetic": 0.0,
+    "samples_in_leaf": 2,
+    "class_distribution": [
+      1,
+      0
+    ],
+    "train_neg": 2,
+    "train_pos": 0,
+    "test_neg": 0,
+    "test_pos": 1
+  },
+  {
+    "rule_id": 8,
+    "rule_code": "R8",
+    "leaf_node_id": 14,
+    "conditions": [
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 132.5,
+        "condition_str": "Glucosa plasmática > 132.5 mg/dL"
+      },
+      {
+        "feature": "Glucose",
+        "operator": ">",
+        "threshold": 154.5,
+        "condition_str": "Glucosa plasmática > 154.5 mg/dL"
+      },
+      {
+        "feature": "Insulin",
+        "operator": ">",
+        "threshold": 80.0,
+        "condition_str": "Insulina sérica > 80.0 µU/mL"
+      }
+    ],
+    "rule_text": "SI Glucosa plasmática > 132.5 mg/dL Y Glucosa plasmática > 154.5 mg/dL Y Insulina sérica > 80.0 µU/mL -> ENTONCES ALERTA: ALTO RIESGO",
+    "predicted_class": 1,
+    "predicted_label": "ALERTA: ALTO RIESGO",
+    "prob_diabetic": 0.918,
+    "samples_in_leaf": 91,
+    "class_distribution": [
+      0,
+      0
+    ],
+    "train_neg": 13,
+    "train_pos": 78,
+    "test_neg": 9,
+    "test_pos": 19
+  }
+]

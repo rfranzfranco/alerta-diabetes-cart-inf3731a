@@ -1,0 +1,255 @@
+{
+  "model_name": "DecisionTreeClassifier (Podado)",
+  "max_depth": 3,
+  "criterion": "gini",
+  "class_weight": "balanced",
+  "metrics": {
+    "sensitivity_recall": 0.7463,
+    "specificity": 0.712,
+    "precision": 0.5814,
+    "f1_score": 0.6536,
+    "accuracy": 0.724,
+    "roc_auc": 0.7487
+  },
+  "confusion_matrix": {
+    "true_negatives": 89,
+    "false_positives": 36,
+    "false_negatives": 17,
+    "true_positives": 50,
+    "matrix_2x2": [
+      [
+        89,
+        36
+      ],
+      [
+        17,
+        50
+      ]
+    ]
+  },
+  "test_set_size": 192,
+  "positive_support": 67,
+  "negative_support": 125,
+  "classification_report": {
+    "0": {
+      "precision": 0.8396,
+      "recall": 0.712,
+      "f1-score": 0.7706,
+      "support": 125
+    },
+    "1": {
+      "precision": 0.5814,
+      "recall": 0.7463,
+      "f1-score": 0.6536,
+      "support": 67
+    },
+    "accuracy": 0.724,
+    "macro avg": {
+      "precision": 0.7105,
+      "recall": 0.7291,
+      "f1-score": 0.7121,
+      "support": 192
+    },
+    "weighted avg": {
+      "precision": 0.7495,
+      "recall": 0.724,
+      "f1-score": 0.7297,
+      "support": 192
+    }
+  },
+  "baseline_holdout": {
+    "metrics": {
+      "sensitivity_recall": 0.4627,
+      "specificity": 0.84,
+      "precision": 0.6078,
+      "f1_score": 0.5254,
+      "accuracy": 0.7083,
+      "roc_auc": 0.7487
+    },
+    "confusion_matrix": {
+      "true_negatives": 105,
+      "false_positives": 20,
+      "false_negatives": 36,
+      "true_positives": 31,
+      "matrix_2x2": [
+        [
+          105,
+          20
+        ],
+        [
+          36,
+          31
+        ]
+      ]
+    },
+    "classification_report": {
+      "0": {
+        "precision": 0.7447,
+        "recall": 0.84,
+        "f1-score": 0.7895,
+        "support": 125
+      },
+      "1": {
+        "precision": 0.6078,
+        "recall": 0.4627,
+        "f1-score": 0.5254,
+        "support": 67
+      },
+      "accuracy": 0.7083,
+      "macro avg": {
+        "precision": 0.6763,
+        "recall": 0.6513,
+        "f1-score": 0.6574,
+        "support": 192
+      },
+      "weighted avg": {
+        "precision": 0.6969,
+        "recall": 0.7083,
+        "f1-score": 0.6973,
+        "support": 192
+      }
+    }
+  },
+  "cross_validation": {
+    "n_splits": 3,
+    "variants": {
+      "baseline": {
+        "accuracy": {
+          "fold_scores": [
+            0.7305,
+            0.7305,
+            0.7148
+          ],
+          "mean": 0.7253,
+          "std": 0.0074
+        },
+        "f1": {
+          "fold_scores": [
+            0.6462,
+            0.4298,
+            0.5629
+          ],
+          "mean": 0.5463,
+          "std": 0.0891
+        },
+        "recall": {
+          "fold_scores": [
+            0.7,
+            0.2921,
+            0.5281
+          ],
+          "mean": 0.5067,
+          "std": 0.1672
+        }
+      },
+      "balanced": {
+        "accuracy": {
+          "fold_scores": [
+            0.7188,
+            0.7031,
+            0.6602
+          ],
+          "mean": 0.694,
+          "std": 0.0248
+        },
+        "f1": {
+          "fold_scores": [
+            0.6604,
+            0.6545,
+            0.639
+          ],
+          "mean": 0.6513,
+          "std": 0.009
+        },
+        "recall": {
+          "fold_scores": [
+            0.7778,
+            0.809,
+            0.8652
+          ],
+          "mean": 0.8173,
+          "std": 0.0362
+        }
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "Glucose",
+      "label": "Glucosa plasmática",
+      "importance": 0.5864
+    },
+    {
+      "feature": "BMI",
+      "label": "Índice de masa corporal (IMC)",
+      "importance": 0.2327
+    },
+    {
+      "feature": "Age",
+      "label": "Edad del paciente",
+      "importance": 0.1584
+    },
+    {
+      "feature": "Insulin",
+      "label": "Insulina sérica",
+      "importance": 0.0224
+    },
+    {
+      "feature": "Pregnancies",
+      "label": "Embarazos",
+      "importance": 0.0
+    },
+    {
+      "feature": "BloodPressure",
+      "label": "Presión arterial diastólica",
+      "importance": 0.0
+    },
+    {
+      "feature": "SkinThickness",
+      "label": "Pliegue cutáneo del tríceps",
+      "importance": 0.0
+    },
+    {
+      "feature": "DiabetesPedigreeFunction",
+      "label": "Pedigree genético familiar",
+      "importance": 0.0
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0,
+      "threshold": null
+    },
+    {
+      "fpr": 0.072,
+      "tpr": 0.2836,
+      "threshold": 0.918
+    },
+    {
+      "fpr": 0.16,
+      "tpr": 0.4627,
+      "threshold": 0.7395
+    },
+    {
+      "fpr": 0.288,
+      "tpr": 0.7463,
+      "threshold": 0.5877
+    },
+    {
+      "fpr": 0.352,
+      "tpr": 0.7761,
+      "threshold": 0.3834
+    },
+    {
+      "fpr": 0.92,
+      "tpr": 0.9851,
+      "threshold": 0.1547
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0,
+      "threshold": 0.0
+    }
+  ]
+}
